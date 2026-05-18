@@ -1,0 +1,24 @@
+/* Tablet & Desktop Adjustments */
+
+#menu {
+    display: none; /* Hide hamburger on large screens */
+}
+
+.navigation {
+    display: flex; /* Always show nav on large screens */
+    flex-direction: row;
+}
+
+.navigation li {
+    flex: 1 1 auto;
+}
+
+/* Responsive Grid */
+.grid-container {
+    /* Auto-fit creates as many columns as will fit, min 300px each */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+header {
+    flex-direction: column; /* Stacks Title and Nav on desktop */
+}
