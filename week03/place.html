@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places</title>
+    <meta name="description" content="A webpage showcasing various places around the world.">
+    <meta name="Author" content="Adonis Lebrón">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>Dominican Republic</h1>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <picture>
+                <source srcset="images/Dominican.webp" media="(min-width: 800px)">
+                <img src="images/Dominican-small.webp" alt="Beautiful landscape of the Dominican Republic" class="hero-bg">
+            </picture>
+
+            <section class="card card-data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 48,671 sq km</li>
+                    <li><strong>Population:</strong> 11,400,000</li>
+                    <li><strong>Capital:</strong> Santo Domingo</li>
+                    <li><strong>Languages:</strong> Spanish</li>
+                    <li><strong>Currency:</strong> Dominican Peso (DOP)</li>
+                    <li><strong>Time Zone:</strong> UTC-4</li>
+                    <li><strong>Calling Code:</strong> +1-809, +1-829, +1-849</li>
+                    <li><strong>Internet TLD:</strong> .do</li>
+                </ul>
+            </section>
+
+            <section class="card card-weather">
+                <h2>Weather</h2>
+                <ul>
+                    <li><strong>Temperature:</strong> <span id="temp">9</span> °C</li>
+                    <li><strong>Conditions:</strong> Mostly Clear</li>
+                    <li><strong>Wind:</strong> <span id="wind">12</span> km/h</li>
+                    <li><strong>Wind Chill:</strong> <span id="windchill"></span></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏛️ Adonis Lebrón 🏛️ Dominican Republic</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

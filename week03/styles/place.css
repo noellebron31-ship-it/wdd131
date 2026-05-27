@@ -1,0 +1,133 @@
+/* -------------------------------------------------------------------------
+   1. GLOBAL VARIABLES & RESET
+------------------------------------------------------------------------- */
+:root {
+    --primary-red: #CE1126;    /* Dominican Flag Red */
+    --primary-blue: #002D62;   /* Dominican Flag Blue */
+    --accent-green: #00875A;   /* Card headers matching layout accent style */
+    --bg-card: rgba(255, 255, 255, 0.85); /* Semitransparent white overlay */
+    --text-dark: #222222;
+    --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-stack);
+    background-color: #f0f0f0;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--primary-red);
+    color: white;
+    text-align: center;
+    padding: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: var(--primary-red);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: auto;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+
+main {
+    width: 100%;
+}
+
+.hero-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-bg {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+.card {
+    background-color: var(--bg-card);
+    padding: 1.25rem;
+    margin: 1rem auto;
+    width: 90%;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    background-color: var(--accent-green);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    min-width: 120px;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+}
+
+
+@media (min-width: 850px) {
+   
+    .hero-container {
+        height: 650px;
+    }
+
+    .hero-bg {
+        height: 100%;
+    }
+
+   
+    .card {
+        position: absolute;
+        width: 320px;
+        margin: 0;
+    }
+
+    
+    .card-data {
+        top: 10%;
+        left: 3%;
+    }
+
+    
+    .card-weather {
+        bottom: 10%;
+        right: 3%;
+    }
+
+
+    .card-weather h2::after {
+        content: " ⛅";
+        font-size: 1.2rem;
+    }
+}
