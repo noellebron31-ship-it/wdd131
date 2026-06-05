@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description" content="A responsive temple album page.">
+    <meta name="author" content="Adonis Lebron">
+    <link rel="stylesheet" href="styles/filtered-temples.css" media="(min-width: 600px)">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+ <header>
+        <div class="header-container">
+            <h1>Temple Gallery</h1>
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+        </div>
+        <nav>
+            <ul class="nav-menu" id="nav-links">
+                <li><a href="#" id="home" class="active">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Temple Gallery</h2>
+        <div class="grid-container">
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Adonis Lebron | WDD131</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
