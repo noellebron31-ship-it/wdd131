@@ -1,0 +1,152 @@
+/* General Reset & Variables */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2b5c8f;
+    --accent-color: #f39c12;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+    --border-color: #ccc;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+}
+
+main {
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+    margin: 30px auto;
+}
+
+/* Form Styles */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.required {
+    color: #e74c3c;
+}
+
+fieldset {
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+/* Inputs, Select & Textarea */
+select, input[type="date"], input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+select:focus, input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+/* Checkbox Alignment */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+}
+
+/* CSS Star Rating Design (Reversed layout for pure CSS selection states) */
+.rating-group {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.rating-group input {
+    display: none;
+}
+
+.rating-group label {
+    font-size: 2.5rem;
+    color: var(--border-color);
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-bottom: 0;
+    padding: 0 2px;
+}
+
+/* Fill stars on hover or when checked */
+.rating-group label:hover,
+.rating-group label:hover ~ label,
+.rating-group input:checked ~ label {
+    color: var(--accent-color);
+    content: "★";
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a3c61;
+}
+
+footer {
+    margin-top: auto;
+}
