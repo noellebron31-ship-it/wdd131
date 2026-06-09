@@ -52,31 +52,32 @@
                 <input type="date" id="installationDate" name="installationDate" required>
             </div>
 
-            <div class="form-group">
-                <fieldset>
-                    <legend>Useful Features (Check all that apply)</legend>
-                    
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="featureDurability" name="features" value="durability">
-                        Durability
-                    </label>
-                    
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="featureDesign" name="features" value="design">
-                        Elegant Design
-                    </label>
-                    
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="featurePerformance" name="features" value="performance">
-                        High Performance
-                    </label>
-                    
-                    <label class="checkbox-label">
-                        <input type="checkbox" id="featureEase" name="features" value="easeOfUse">
-                        Ease of Use
-                    </label>
-                </fieldset>
-            </div>
+            
+          <div class="form-group">
+    <fieldset>
+        <legend>Useful Features (Check all that apply)</legend>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="featureDurability" name="features" value="durability">
+            <label for="featureDurability">Durability</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="featureDesign" name="features" value="design">
+            <label for="featureDesign">Elegant Design</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="featurePerformance" name="features" value="performance">
+            <label for="featurePerformance">High Performance</label>
+        </div>
+        
+        <div class="checkbox-group">
+            <input type="checkbox" id="featureEase" name="features" value="easeOfUse">
+            <label for="featureEase">Ease of Use</label>
+        </div>
+    </fieldset>
+</div>  
 
             <div class="form-group">
                 <label for="writtenReview">Written Review (Optional)</label>
