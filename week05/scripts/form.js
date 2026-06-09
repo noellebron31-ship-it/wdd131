@@ -12,9 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (productSelect) {
         products.forEach(product => {
             const option = document.createElement("option");
-            option.value = product.id; // Backend value uses the product id
+            option.value = product.id; 
             
-            // Capitalize strings neatly for user display
             option.textContent = product.name.split(' ')
                 .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                 .join(' ');
