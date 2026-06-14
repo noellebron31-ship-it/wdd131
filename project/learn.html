@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Modules | Bald Trading</title>
+    <meta name="description" content="Explore our curated collection of trading lessons covering fundamentals, technical analysis, and advanced risk strategies.">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/learn.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">🥚 Bald<span>Trading</span></div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html" class="active">Learn</a></li>
+                    <li><a href="contact.html">Contact/Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="page-header">
+            <h1>Trading Academy</h1>
+            <p>Filter through our expert-designed modules to start your journey.</p>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Modules</button>
+                <button class="filter-btn" data-filter="Beginner">Beginner</button>
+                <button class="filter-btn" data-filter="Intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="Advanced">Advanced</button>
+            </div>
+        </section>
+
+        <section class="academy-showcase">
+            <div class="showcase-card">
+                <img src="images/trading.webp" alt="Market analysis charts layout" loading="lazy" width="400" height="250" class="responsive-img">
+                <h3>Technical Edge</h3>
+            </div>
+            <div class="showcase-card">
+                <img src="images/trading-2.webp" alt="Risk management matrix dashboard" loading="lazy" width="400" height="250" class="responsive-img">
+                <h3>Calculated Risk</h3>
+            </div>
+        </section>
+
+        <section id="modules-grid" class="modules-grid">
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Bald Trading. Noel Suero. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">Project References</a></p>
+    </footer>
+</body>
+</html>

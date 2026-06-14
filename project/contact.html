@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join the Community | Bald Trading</title>
+    <meta name="description" content="Connect with expert traders, submit feedback, or request custom access to institutional-grade learning tools.">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/thank.css">
+    <script src="scripts/trading.js" defer></script>
+    <script src="scripts/thank.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">🥚 Bald<span>Trading</span></div>
+            <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="learn.html">Learn</a></li>
+                    <li><a href="contact.html" class="active">Contact/Join</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container form-page">
+        <section class="form-card">
+            <h1>Join Our Trading Community</h1>
+            <p>Register your interest to unlock private weekly webinars and advanced market breakdowns.</p>
+            <form id="trading-contact-form" method="get" action="thankyou.html">
+    <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required autocomplete="name" placeholder="John Doe">
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="john@example.com">
+    </div>
+    <div class="form-group">
+        <label for="experience">Trading Experience Level:</label>
+        <select id="experience" name="experience" required>
+            <option value="" disabled selected>Select your level...</option>
+            <option value="none">Absolute Beginner (0-6 months)</option>
+            <option value="intermediate">In the Markets (6 months - 2 years)</option>
+            <option value="advanced">Consistent Trader (2+ years)</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="comments">What are your trading goals?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="I want to master risk management..."></textarea>
+    </div>
+    <button type="submit" class="btn-submit">Submit Registration</button>
+</form>
+            <div id="form-feedback" class="form-feedback hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> Bald Trading. Noel Suero. All rights reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+        <p><a href="references.html">Project References</a></p>
+    </footer>
+</body>
+</html>
