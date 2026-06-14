@@ -286,3 +286,29 @@ function renderSubmissionSummary() {
         <p>📅 <strong>Timestamp Status:</strong> Active Processing</p>
     `;
 }
+
+function initMobileNav() {
+    const toggleBtn = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+    
+    if (toggleBtn && navMenu) {
+        toggleBtn.addEventListener("click", (e) => {
+            e.stopPropagation(); 
+            navMenu.classList.toggle("open");
+            
+            const isOpen = navMenu.classList.contains("open");
+            toggleBtn.setAttribute("aria-expanded", isOpen);
+            
+
+            toggleBtn.textContent = isOpen ? "✕" : "☰";
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!navMenu.contains(e.target) && !toggleBtn.contains(e.target)) {
+                navMenu.classList.remove("open");
+                toggleBtn.textContent = "☰";
+                toggleBtn.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
+}
